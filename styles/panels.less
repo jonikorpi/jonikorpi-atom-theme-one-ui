@@ -5,6 +5,18 @@
   }
 }
 
+atom-panel-container {
+  &.left {
+    border-right: @base-border-thickness solid @tool-panel-border-color;
+  }
+  &.right {
+    border-left: @base-border-thickness solid @tool-panel-border-color;
+  }
+  &.bottom {
+    border-top: @base-border-thickness / 8 solid @tool-panel-border-color;
+  }
+}
+
 atom-panel {
   .text(normal);
   position: relative;

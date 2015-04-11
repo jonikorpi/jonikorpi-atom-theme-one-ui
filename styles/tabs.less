@@ -1,16 +1,19 @@
-@tab-border-size: 1px;
+@tab-border-size: 0;
 @tab-border: @tab-border-size solid @tab-border-color;
 @tab-max-width: @ui-size*15;
-@tab-min-width: @ui-size*5;
-@tab-padding: @ui-padding/2;
+@tab-min-width: @ui-size*3.2;
+@tab-padding: @ui-padding * 1.618;
 @modified-icon-width: @ui-size*1.5;
+@tab-border-radius: @component-border-radius * 2;
 
 .tab-bar {
-  height: @ui-tab-height;
-  box-shadow: inset 0 -1px 0 @tab-border-color;
+  height: @ui-tab-height + @component-padding / 2;
+  // box-shadow: inset 0 -1px 0 @tab-border-color;
   background: @tab-bar-background-color;
+  border-top: @base-border-thickness solid @tab-border-color;
   overflow-x: auto;
   overflow-y: hidden;
+  text-align: center;
 
   &::-webkit-scrollbar {
     display: none;
@@ -29,6 +32,9 @@
     line-height: @ui-tab-height;
     padding: 0;
     margin: 0;
+    transition: opacity .236s ease-out;
+    border-radius: @tab-border-radius @tab-border-radius 0 0;
+    overflow: hidden;
 
 
     // Background ----------------------
@@ -219,6 +225,7 @@
   opacity: 0;
   transform: scaleY(0);
   transition: opacity .16s, transform .16s cubic-bezier(.80, 0, .90, .53);
+  display: none;
 
   .theme-one-light-ui & {
     left: 0;

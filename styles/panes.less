@@ -1,12 +1,32 @@
-
 atom-pane-container {
   atom-pane {
     position: relative;
-    padding-top: @ui-padding/2;
+  }
 
-    .item-views {
-      border: 1px solid @pane-item-border-color;
-      border-top: none;
+  atom-pane,
+  atom-pane-axis.vertical {
+    border: 0 solid @pane-item-border-color;
+  }
+
+  atom-pane-axis.vertical + atom-pane-axis.vertical,
+  atom-pane-axis.vertical + atom-pane,
+  atom-pane + atom-pane-axis.vertical,
+  atom-pane + atom-pane {
+    border-left-width: @base-border-thickness;
+  }
+
+  atom-pane-axis.vertical > atom-pane + atom-pane {
+    border-top-width: @base-border-thickness;
+    border-left-width: 0;
+  }
+
+  atom-pane-axis {
+    &.horizontal > * {
+      // border-left-width: 0;
+    }
+
+    &.vertical > * {
+      // border-bottom: @component-padding / 2 solid @pane-item-border-color;
     }
   }
 }
