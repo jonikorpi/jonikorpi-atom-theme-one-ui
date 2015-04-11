@@ -1,15 +1,10 @@
 {
-  "name": "one-dark-ui",
+  "name": "jonikorpi-atom-theme-ui",
   "theme": "ui",
-  "version": "0.6.3",
-  "description": "Atom One dark UI theme",
-  "keywords": [
-    "dark",
-    "adaptive",
-    "ui"
-  ],
+  "version": "3.4.1",
+  "description": "A minimalistic UI theme based on One Dark. Styling loosely based on Light Table (http://lighttable.com). Created by @jonikorpi (https://twitter.com/jonikorpi).",
   "license": "MIT",
-  "repository": "https://github.com/atom/one-dark-ui",
+  "repository": "https://github.com/jonikorpi/jonikorpi-atom-theme",
   "engines": {
     "atom": ">0.40.0"
   }
