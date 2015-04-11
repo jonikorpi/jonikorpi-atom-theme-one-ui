@@ -4,7 +4,7 @@
   "version": "3.4.1",
   "description": "A minimalistic UI theme based on One Dark. Styling loosely based on Light Table (http://lighttable.com). Created by @jonikorpi (https://twitter.com/jonikorpi).",
   "license": "MIT",
-  "repository": "https://github.com/jonikorpi/jonikorpi-atom-theme",
+  "repository": "https://github.com/jonikorpi/jonikorpi-atom-theme-one-ui",
   "engines": {
     "atom": ">0.40.0"
   }
