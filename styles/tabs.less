@@ -2,7 +2,7 @@
 @tab-border: @tab-border-size solid @tab-border-color;
 @tab-max-width: @ui-size*15;
 @tab-min-width: @ui-size*3.2;
-@tab-padding: @ui-padding * 1.618;
+@tab-padding: @ui-padding / 3;
 @modified-icon-width: @ui-size*1.5;
 @tab-border-radius: @component-border-radius * 2;
 
@@ -81,7 +81,7 @@
       top: 0;
       right: 0;
       z-index: 1;
-      margin-right: @tab-padding*1.2;
+      margin-right: @modified-icon-width / 2;
       height: @ui-tab-height;
       line-height: @ui-tab-height;
       text-align: center;
