@@ -48,4 +48,18 @@ atom-text-editor::shadow {
   .line-number.cursor-line {
     background-color: transparent;
   }
+
+  .bracket-matcher .region {
+    border: none;
+    opacity: 1;
+    border: solid @text-color-info;
+    border-width: 1px 0;
+    background: @background-color-info;
+    transition: all 0.15s linear;
+  }
+
+  .blink-off + .highlights .bracket-matcher .region {
+    border-color: transparent;
+    background: transparent;
+  }
 }
