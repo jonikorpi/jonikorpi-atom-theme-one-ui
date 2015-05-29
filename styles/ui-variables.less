@@ -157,14 +157,14 @@
 
 
 // Sizes -----------------
-@font-size:               .8125em;
-@input-font-size:         1em;
+@font-size:               13px;
+@input-font-size:         @font-size;
 @disclosure-arrow-size:   @font-size;
 
-@component-padding:       @font-size*1.618;
-@component-icon-padding:  @component-padding/5;
-@component-icon-size:     1em; // needs to stay 16px to look sharpest
-@component-line-height:   @font-size*2.618;
+@component-padding:       21px;
+@component-icon-padding:  5px;
+@component-icon-size:     @font-size; // needs to stay 16px to look sharpest
+@component-line-height:   26px;
 @component-border-radius: 5px;
 
 
@@ -179,7 +179,7 @@
 // These variables are only used in this theme
 // ----------------------------------------------
 
-@ui-theme-name: one-dark-ui;
+@ui-theme-name: jonikorpi-atom-ui;
 
 // Text (Custom) -----------------
 @text-color-faded: @text-color-subtle;
@@ -243,13 +243,13 @@
 
 // Sizes (Custom) -----------------
 
-@ui-size:                 1em;
-@ui-input-size:           1em;
+@ui-size:                 @font-size;
+@ui-input-size:           @font-size;
 @ui-padding:              @component-padding;
 @ui-padding-pane:         @ui-padding;
 @ui-padding-icon:         @component-icon-padding;
 @ui-line-height:          @component-line-height;
-@ui-tab-height:           @component-padding*2.382;
+@ui-tab-height:           @component-padding*2;
 
 // Packages variables
 // These variables are used to override packages

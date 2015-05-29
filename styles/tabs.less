@@ -7,7 +7,8 @@
 @tab-border-radius: @component-border-radius * 2;
 
 .tab-bar {
-  height: @ui-tab-height + @component-padding / 2;
+  height: @ui-tab-height;
+  box-sizing: content-box;
   // box-shadow: inset 0 -1px 0 @tab-border-color;
   background: @tab-bar-background-color;
   border-top: @base-border-thickness solid @tab-border-color;
